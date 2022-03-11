@@ -1,0 +1,99 @@
+{
+  "ads": [
+    {
+      "id": 1,
+      "title": "Front End Engineer",
+      "description": "Front End Engineer description",
+      "likes": 24,
+      "type": "full-time",
+      "category": "Angular",
+      "user": []
+    },
+    {
+      "id": 2,
+      "title": ".NET Full-Stack Developer",
+      "description": ".NET Full-Stack Developer description",
+      "likes": 473,
+      "type": "part-time",
+      "category": ".NET",
+      "user": [
+        {
+          "id": 3,
+          "username": "user1",
+          "email": "user1@user.com",
+          "password": "user1",
+          "role": "user",
+          "ads": [],
+          "status": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Junior .NET Developer",
+      "description": "Acc is an IT services company specializing in technology consulting and application development for both SMEs and large enterprises worldwide. Starting in 2012",
+      "likes": 73,
+      "type": "part-time",
+      "category": ".Net",
+      "user": []
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "organ1",
+      "password": "organ1",
+      "email": "organ1@admin.com",
+      "role": "organisation",
+      "ads": [],
+      "status": ""
+    },
+    {
+      "id": 2,
+      "username": "organ2",
+      "password": "organ2",
+      "email": "organ2@admin.com",
+      "role": "organisation",
+      "ads": [],
+      "status": ""
+    },
+    {
+      "id": 3,
+      "username": "user1",
+      "email": "user1@user.com",
+      "password": "user1",
+      "role": "user",
+      "ads": [
+        {
+          "id": 2,
+          "title": ".NET Full-Stack Developer",
+          "description": ".NET Full-Stack Developer description",
+          "likes": 473,
+          "type": "part-time",
+          "category": ".NET",
+          "user": [
+            {
+              "id": 3,
+              "username": "user1",
+              "email": "user1@user.com",
+              "password": "user1",
+              "role": "user",
+              "ads": [],
+              "status": ""
+            }
+          ]
+        }
+      ],
+      "status": ""
+    },
+    {
+      "id": 4,
+      "username": "user2",
+      "password": "user2",
+      "email": "user2@user.com",
+      "role": "user",
+      "ads": [],
+      "status": ""
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<h3>Adverts</h3>
+<a routerLink="/ads/create" *ngIf="user.role=='organisation'">
+  Create advert
+</a>
+<a routerLink="/ads/applied" *ngIf="user.role=='user'">Applied adverts</a>
+<a routerLink="/user">Profile</a>
+<section>
+  <div *ngIf="errorMessage">
+    {{errorMessage}}
+  </div>
+  <app-ad-item *ngFor="let ad of ads;let i=index"
+  [ad]="ad" (adDeleted)="onAdDelete($event)"
+               (onLikedAd)="onLikedAd($event)"
+               (onAppliedAd)="onAnAppliedAd($event)"
+  >
+    </app-ad-item>
+</section>

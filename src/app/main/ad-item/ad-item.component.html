@@ -1,0 +1,18 @@
+
+<article>
+  <h3>{{ad.title}}</h3>
+  <p>{{ad.description}}</p>
+  <p>Type: {{ad.type}}</p>
+  <p>Category: {{ad.category}}</p>
+  <p>{{ad.likes}} likes</p>
+  <button class="btn" (click)="onLike()" *ngIf="user.role=='user'&&isVisible1">Like</button>
+  <button
+  class="btn" (click)="onApply()"
+  *ngIf="user.role=='user'&&isVisible">Apply</button>
+  <a class="btn" [routerLink]="['/ads','edit',ad.id]"
+     *ngIf="user.role==='organisation'">Edit</a>
+  <button class="btn" (click)="onDelete()"
+  *ngIf="user.role==='organisation'">Delete</button>
+  <a class="btn" [routerLink]="['/ads','applicants',ad.id]"
+     *ngIf="user.role==='organisation'">Applicants</a>
+</article>

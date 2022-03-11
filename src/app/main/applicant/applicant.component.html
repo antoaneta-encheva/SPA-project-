@@ -1,0 +1,6 @@
+<div *ngFor="let user of ad.user">
+  <span>Name:{{user.username}}</span>
+  <span>Status:{{user.status}}</span>
+  <button (click)="onAccept()" >Accept</button>
+  <button (click)="onDeny()">Deny</button>
+  </div>

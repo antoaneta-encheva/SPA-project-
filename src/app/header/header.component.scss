@@ -1,0 +1,22 @@
+
+.nav{
+  background-color: darkcyan;
+  padding: 10px;
+
+  h1{
+    text-align: center;
+  }
+  ul{
+    list-style: none;
+
+    li{
+      display: inline-block;
+      margin: 10px;
+      a{
+        text-decoration: none;
+        color:aliceblue;
+
+      }
+    }
+  }
+}
